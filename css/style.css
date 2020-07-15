@@ -1,0 +1,401 @@
+/*universal styles*/
+*{
+  box-sizing: border-box;
+}
+html{
+  font-size: 10px;
+  font-family: "Spartan";
+}
+/*body*/
+body {
+  display: grid;
+  grid-template-areas:
+  "navbar"
+  "content"
+  "atlas_content"
+  "social";
+  height: 100vh;
+  min-height: 100vh;
+  overflow; hidden;
+  width: 100%;
+}
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+/* css grid*/
+.container {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: minmax(38rem,1fr);
+  grid-template-rows: auto;
+  height: 100vh;
+  width: 38rem;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow-y: scroll;
+}
+.intro {
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  width: 70%;
+}
+nav {
+  display: grid;
+  grid-area: "navbar";
+  grid-template-columns: 1fr 6rem 6rem 4rem ;
+  grid-template-rows: 1;
+  margin: 0 auto;
+  margin-top: 1rem;
+  width: 100%;
+}
+.content {
+  display: grid;
+  grid-area: "content";
+  margin: 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+  height: auto;
+  text-align: center;
+  width: 70%;
+}
+.atlas_content {
+  display: grid;
+  grid-area: "atlas_content";
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 4rem;
+}
+.footer {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+.social {
+  display: grid;
+  grid-area: "social";
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1;
+  margin: 0 auto;
+  margin: 2rem 0 1rem;
+  width: 100%;
+}
+.social.linkedin {
+  text-align: right;
+}
+/* typography */
+nav a {
+  color: black;
+  text-decoration: none;
+}
+.content a {
+  color: #B6D2F0;
+}
+h1 {
+  font-size: 2.2rem;
+  color: #B6D2F0;
+}
+h2 {
+  color: #B6D2F0;
+  font-size: 2rem;
+  line-height: 3.6rem;
+}
+h3 {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+h4 {
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+}
+h5 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+h6 {
+  font-size: 1.2rem;
+  line-height: 3.2rem;
+}
+P {
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+.atlas_content article {
+  margin: 2rem 0 2rem;
+}
+.atlas_content article p {
+  margin: 1rem 0;
+}
+.atlas_content article a {
+  color: #B6D2F0;
+  font-size: 1.6rem;
+  padding-top: 6rem;
+}
+.intro h1, .aboutme h1 {
+  color: #B6D2F0;
+  margin: 3rem 0 3rem;
+  text-align: left;
+}
+.aboutme p {
+  text-align: left;
+  margin-top: 1rem;
+}
+.atlas_content p {
+  text-align: left;
+}
+.analysis p {
+  text-align: left;
+  padding: 1rem 0;
+}
+.analysis h5, .usersasked h5, .usabilitytesting h5, .usersasked h4, .usabilitytesting h4  {
+  text-align: left;
+  line-height: 3rem;
+}
+.usertesting h4 {
+    margin-top: 2rem;
+}
+/* navigation bar */
+.icon {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.logo a img {
+  width: 8rem;
+  height: auto;
+  padding: 2rem 2rem 0;
+}
+.portfolio, .about {
+  font-size: 1.4rem;
+  margin: auto;
+
+}
+.linkedin, .github{
+  font-size: 1.8rem;
+}
+.linkedin {
+  text-align: right;
+}
+.github {
+  text-align: left;
+}
+
+.underline {
+  border-bottom: 1px solid #B6D2F0;
+  padding-bottom: .1rem;
+}
+
+/*intro & portfolio*/
+.introduction {
+  margin: 6rem 0;
+}
+
+.project1 img, .project2 img {
+  height: 16rem;
+  width: auto;
+}
+.homepage figure {
+  margin-top: 4em;
+  margin-bottom: 4rem;
+}
+figcaption {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  padding-bottom: 2rem;
+  margin: 2rem 0 1rem;
+}
+/* about page */
+.headshot {
+  height: auto;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 60%;
+}
+.my_photo {
+  height: auto;
+  margin: 4rem 0 4rem 0;
+  text-align: center;
+  width: 100%;
+}
+/*project page, atlas*/
+
+/* images */
+.atlas_img {
+  height: auto;
+  width: 80%;
+}
+.atlas_content img {
+  height: auto;
+  margin: 2rem 0 0 0;
+  width: 20rem;
+}
+.prototype img, .typography img {
+  width: 4rem;
+  height: auto;
+}
+.personas img {
+  width: 16rem;
+  height: auto;
+}
+.wireframe_sketch img {
+  width: 50%;
+  height: auto;
+}
+.wireframe_digital img {
+  width: 100%;
+  height: auto;
+}
+.survey img, .user img, .digital img, .userflow2 img, .behind img, .first-mockup img, .second-mockup img {
+  height: auto;
+  margin: 2rem 0;
+  width: 90%;
+}
+.stories img, .flows img, .evolution img, .problem_solution img, .color img {
+  margin-top: 2rem;
+  width: 70%;
+  height: auto;
+}
+.usertesting2 img {
+  width: 50%;
+}
+.improved-flow img, .improved-readability img {
+  width: 70%;
+}
+.prototype img {
+  width: 20%;
+}
+.sets-atlas-apart img {
+  width: 70%;
+}
+.sets-atlas-apart {
+  padding-bottom: 6rem;
+}
+.link {
+  margin-top: 2rem;
+}
+.overview {
+  margin: 0 auto;
+  text-align: center;
+}
+.roles, .deliverables, .tools {
+  display: inline-block;
+  border: 1px solid #B6D2F0;
+  border-radius: 4rem;
+  padding: 1rem 0;
+  margin-top: 1;
+  width: 70%;
+}
+.round {
+  text-align: center;
+  border: 1px solid #B6D2F0;
+  padding: 2rem 0 2rem;
+  border-radius: 4rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.innerwrap {
+  display: inline-block;
+  width: 80%;
+}
+button {
+  background-color: #B6D2F8;
+  border: none;
+  border-radius: 4rem;
+  color: white;
+  font-family: "Spartan";
+  font-size: 1.4rem;
+  margin: 2rem 0 4rem;
+  padding: 2rem;
+  width: 90%;
+}
+.reflection {
+  border: 1px solid #B6D2F8;
+  border-radius: 4rem;
+  padding: 1rem 0 2rem;
+}
+/*footer*/
+.icon {
+  width: 2rem;
+  height: 2rem;
+}
+.return{
+  margin: 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.return figure img {
+  display: inline-block;
+  width: 2rem;
+}
+.return figcaption {
+  font-size: 1rem;
+  margin: -1rem;
+}
+/* media queries */
+@media (min-width: 60rem) {
+  .container {
+    width: 90%;
+    max-width: 100rem;
+  }
+  .intro {
+    width: 60%;
+  }
+  .atlas_intro img {
+    width: 60%;
+  }
+  .content {
+    width: 60%;
+  }
+  overview {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .usertesting {
+    margin:0 auto;
+    text-align: center;
+  }
+  .survey_percentage {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .roles, .deliverables, .tools {
+    display: inline-block;
+    border: 1px solid #B6D2F0;
+    border-radius: 4rem;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    text-align: center;
+    width: 50%;
+  }
+  .results {
+    width: 70%;
+    display: inline-block;
+  }
+  .usersasked, .usabilitytesting {
+    width: 50%;
+    display: inline-block;
+  }
+  .round {
+    text-align: center;
+    border: 1px solid #B6D2F0;
+    padding: 2rem 0 2rem;
+    border-radius: 4rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  button {
+    width: 40%;
+  }
+}
+@media (min-width: 100rem) {
+  .container {
+
+  }
+}
